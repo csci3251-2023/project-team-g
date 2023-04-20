@@ -23,6 +23,8 @@ Task 6: Showcase your team
 Task 7: Register your repo
 - Edit the readme to add a link of our team, and request for review from @chuckjee.
 # Code
+{% include_relative code.c %}
+![workflow status badge](https://github.com/csci3251-2023/project-team-g/actions/workflows/c-cpp.yml/badge.svg)
 # Contributors
 
 
