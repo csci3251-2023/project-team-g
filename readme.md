@@ -24,6 +24,10 @@ Task 7: Register your repo
 - Edit the readme to add a link of our team, and request for review from @chuckjee.
 # Code
 # Contributors
-
+{% for stu in site.stu %}
+  <img src={{stu.image}} alt="icon" width="50" height="50">
+  <p>@{{ stu.user }}  ({{ stu.name }})<p>
+  <p>{{ stu.content | markdownify }}</p>
+{% endfor %}
 
  
