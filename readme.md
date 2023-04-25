@@ -29,11 +29,10 @@ Task 7: Register your repo
 <ul>
 {% for stu in site.stu %} 
     <li>
-      <div style="display: flex">
-        <img src="{{stu.image}}" alt="icon" width="50" height="50">
-        <p style="margin-top: 30px">@{{ stu.user }}  ({{ stu.name }})</p>
-      </div>
-      <ul><li><p>&emsp;&emsp;{{ stu.content | markdownify }}</p></li></ul>
+        <p>
+         <img src="{{stu.image}}" alt="icon" width="50" height="50"> @{{ stu.user }}  ({{ stu.name }})
+        </p>
+      <ul><li><p>{{ stu.content | markdownify }}</p></li></ul>
   </li>
 {% endfor %}
 </ul>
