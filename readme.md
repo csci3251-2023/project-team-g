@@ -28,9 +28,9 @@ Task 7: Register your repo
 # Contributors
 {% for stu in site.stu %}
   <div style="display: flex">
-  <p style="margin-top: 50px">>><p>
+  <p style="margin-top: 50px">>></p>
     <img src="{{stu.image}}" alt="icon" width="50" height="50">
-    <pstyle="margin-top: 50px">@{{ stu.user }}  ({{ stu.name }})</p>
+    <p style="margin-top: 50px">@{{ stu.user }}  ({{ stu.name }})</p>
   </div>
   <p>&emsp;&emsp;>>{{ stu.content | markdownify }}</p>
 {% endfor %}
