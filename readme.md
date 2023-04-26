@@ -26,14 +26,18 @@ Task 7: Register your repo
 {% include_relative code.c %}
 ![workflow status badge](https://github.com/csci3251-2023/project-team-g/actions/workflows/c-cpp.yml/badge.svg)
 # Contributors
-{% for stu in site.stu %}
-  <div style="display: flex">
-  <p style="margin-top: 50px">>></p>
-    <img src="{{stu.image}}" alt="icon" width="50" height="50">
-    <p style="margin-top: 50px">@{{ stu.user }}  ({{ stu.name }})</p>
-  </div>
-  <p>&emsp;&emsp;>>{{ stu.content | markdownify }}</p>
+<ul>
+{% for stu in site.stu %} 
+    <li>
+        <p>
+         <img src="{{stu.image}}" alt="icon" width="50" height="50"> @{{ stu.user }}  ({{ stu.name }})
+        </p>
+      <ul><li><p>{{ stu.content | markdownify }}</p></li></ul>
+  </li>
 {% endfor %}
+</ul>
+=======
 # Last updated 
 {{ site.time }}
+
  
