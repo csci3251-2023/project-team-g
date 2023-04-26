@@ -34,5 +34,6 @@ Task 7: Register your repo
   </div>
   <p>&emsp;&emsp;>>{{ stu.content | markdownify }}</p>
 {% endfor %}
-
+# Last updated 
+{{ site.time }}
  
